@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/resume/resume",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/TestList/TestList",
+    "pages/TestPaper/TestPaper"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "Resume",
+        "pagePath": "pages/resume/resume",
+        "iconPath": "images/resume.png",
+        "selectedIconPath": "images/resume.png"
+      },
+      {
+        "text": "Test",
+        "pagePath": "pages/TestList/TestList",
+        "iconPath": "images/pencil.png",
+        "selectedIconPath": "images/pencil.png"
+      },
+      {
+        "text": "Company",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile-actived.png"
+      }
+    ]
+  }
+}

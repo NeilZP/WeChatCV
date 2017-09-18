@@ -1,0 +1,15 @@
+
+  <view class="body">
+    <scroll-view scroll-y="true" height="100%">
+      <block wx:for="{{TestPages}}">
+        <navigator url="../TestPaper/TestPaper?id={{item.id}}&name={{item.name}}">
+          <view class="board">
+            <view class="board-info">
+              <text class="board-name">{{item.name}}</text>
+              <image class="board-img" src="/images/arrowright.png" mode="aspectFill"/>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </scroll-view>
+  </view>

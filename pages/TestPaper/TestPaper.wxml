@@ -1,0 +1,22 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view >
+  <view class="body">
+    <scroll-view wx:for="{{PaperData.questionnaires}}"  wx:key="*this" height="100%">
+        <view class="title">{{index}}</view>
+        <view class="board" wx:for="{{item.questions}}" wx:key="id">
+          <view class="section__title">{{item.ask}}</view>
+            <radio-group class="radio-group" bindblur="bindRadio" name="{{item.id}}" >
+              <block wx:for="{{item.options}}"  wx:key="*this">
+              <label >
+                <radio value="{{index}}" checked="{{item.checked}}"/>{{item}}
+              </label>
+            </block>
+            </radio-group>
+        </view>
+    </scroll-view>
+  </view>
+  <view class="title">
+      <button type="primary" formType="submit">Submit</button>
+  </view>
+</view>
+</form>

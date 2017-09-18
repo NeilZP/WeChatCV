@@ -1,0 +1,28 @@
+<!--resume.wxml-->
+<view>
+  <view class='title'> 
+    个人简历
+  </view>
+  <view class="box">
+    <view class="row">
+      <label class="item">姓名</label>
+      <input class="item-input"/>
+    </view>
+    <view class="row">
+      <label class="item">出生年月</label>
+      <input class="item-input"/>
+    </view>
+    <view class="row">
+      <label class="item">籍贯</label>
+      <input class="item-input"/>
+    </view>
+    <view class="row">
+      <label class="item">民族</label>
+      <input class="item-input"/>
+    </view>
+    <view class="row">
+      <label class="item">政治面貌</label>
+      <input class="item-input"/>
+    </view>
+  </view>
+</view>

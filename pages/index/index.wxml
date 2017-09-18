@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view>
+  <view class='title'> 
+    个人简历
+  </view>
+  <view class="userinfo">
+    <view class="box">
+      <view class="row">
+        <label class="item">姓名</label>
+        <input />
+      </view>
+      <view class="row">
+        <label class="item">出生年月</label>
+        <input class="item-input"/>
+      </view>
+      <view class="row">
+        <label class="item">籍贯</label>
+        <input class="item-input"/>
+      </view>
+      <view class="row">
+        <label class="item">民族</label>
+        <input class="item-input"/>
+      </view>
+      <view class="row">
+        <label class="item">政治面貌</label>
+        <input class="item-input"/>
+      </view>
+    </view>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="display:none;"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
